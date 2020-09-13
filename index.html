@@ -9,16 +9,22 @@
 			border: solid #000;
 			border-width: 2px;
 		}
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 	</style>
 </head>
 <body>
 	<h1>When The Wolfsbane Blooms</h1>
 	<button onclick='PrevWTWB()'>Prev</button>
-	<button onclick='NextWTWB()'>Next</button><br>
+	<button onclick='NextWTWB()'>Next</button><br><br>
 
-	<i><text id="wtwb-caption">caption goes here</text></i><br>
+	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br><br>
 
-	<img id="wtwb-img" src="images/wtwb-1.png"><br>
+	<img id="wtwb-img" src="images/wtwb-1.png" class="center"><br>
 
 	<script type="text/javascript">
 		var wtwbmax = 27
@@ -97,7 +103,7 @@
 					document.getElementById("wtwb-caption").innerHTML = "And so can Lyra";
 					break;
 				case 15:
-					document.getElementById("wtwb-caption").innerHTML = "transforming back...";
+					document.getElementById("wtwb-caption").innerHTML = "Transforming back...";
 					break;
 				case 16:
 					document.getElementById("wtwb-caption").innerHTML = "...and forth";
