@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style type="text/css">
+		img{
+			max-width: 90%;
+			max-height: 90%;
+			border: solid #000;
+			border-width: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1>When The Wolfsbane Blooms</h1>
+	<button onclick='PrevWTWB()'>Prev</button>
+	<button onclick='NextWTWB()'>Next</button><br>
+
+	<i><text id="wtwb-caption">caption goes here</text></i><br>
+
+	<img id="wtwb-img" src="images/wtwb-1.png"><br>
+
+	<script type="text/javascript">
+		var wtwbmax = 27
+		var wtwbcurrent = 1
+
+		SetCaption()
+
+		function PrevWTWB()
+		{
+			if (wtwbcurrent == 1)
+				wtwbcurrent = wtwbmax;
+			else
+				wtwbcurrent -=1;
+
+			document.getElementById("wtwb-img").src = "images/wtwb-"+wtwbcurrent+".png";
+
+			SetCaption()
+		}
+
+		function NextWTWB()
+		{
+			if (wtwbcurrent == wtwbmax)
+				wtwbcurrent = 1;
+			else
+				wtwbcurrent +=1;
+			
+			document.getElementById("wtwb-img").src = "images/wtwb-"+wtwbcurrent+".png";
+
+			SetCaption()
+		}
+
+		function SetCaption()
+		{
+			switch(wtwbcurrent)
+			{
+				case 1:
+					document.getElementById("wtwb-caption").innerHTML = "WTWB was developed for a major university assignment by a team of two in Unity (C#). The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. Please note that this project was created under a time crunch";
+					break;
+				case 2:
+					document.getElementById("wtwb-caption").innerHTML = "This is Lyra, a girl who has the gift (or curse) of transforming into a beast when under direct moonlight. When the game begins, she has just escaped confinement in a top secret lab where she was being experimented on";
+					break;
+				case 3:
+					document.getElementById("wtwb-caption").innerHTML = "It is a platformer, and the objective is simply to get to the end alive. Level 1 deals with her escape from the lab";
+					break;
+				case 4:
+					document.getElementById("wtwb-caption").innerHTML = "The blue light represents the moonlight, transforming her into the beast, an entity that Lyra fears the power and aggressiveness of";
+					break;
+				case 5:
+					document.getElementById("wtwb-caption").innerHTML = "The beast is able to attack the military chasing her down";
+					break;
+				case 6:
+					document.getElementById("wtwb-caption").innerHTML = "The white fog is the transformation effect. Meanwhile, the military do not hesitate to shoot on sight";
+					break;
+				case 7:
+					document.getElementById("wtwb-caption").innerHTML = "Level 2 is the deep forest where the lab was located";
+					break;
+				case 8:
+					document.getElementById("wtwb-caption").innerHTML = "Lyra can jump between platforms. Falling may mean death";
+					break;
+				case 9:
+					document.getElementById("wtwb-caption").innerHTML = "The beast (unlike her human form) is able to climb walls and trees, a handy way to get around the level";
+					break;
+				case 10:
+					document.getElementById("wtwb-caption").innerHTML = "The beast is also able to hang on to the roof and shimmy across";
+					break;
+				case 11:
+					document.getElementById("wtwb-caption").innerHTML = "The military aren't the only danger Lyra faces, as elephants will panic and attack";
+					break;
+				case 12:
+					document.getElementById("wtwb-caption").innerHTML = "Level 3 is a thinner forest, perhaps near the edge of civilisation. Lyra demonstrates her ability to sneak in this screenshot";
+					break;
+				case 13:
+					document.getElementById("wtwb-caption").innerHTML = "The beast can swim across water";
+					break;
+				case 14:
+					document.getElementById("wtwb-caption").innerHTML = "And so can Lyra";
+					break;
+				case 15:
+					document.getElementById("wtwb-caption").innerHTML = "transforming back...";
+					break;
+				case 16:
+					document.getElementById("wtwb-caption").innerHTML = "...and forth";
+					break;
+				case 17:
+					document.getElementById("wtwb-caption").innerHTML = "Level 4 is the city, where she might finally be safe. By this time, Lyra has come to understand that the beast and her can coexist. This level is spent entirely as the beast (much to the fright of some NPCs) as she makes her last stand...";
+					break;
+				case 18:
+					document.getElementById("wtwb-caption").innerHTML = "...against the SWAT teams that have been deployed to take her down. She jumps from building to building in this level";
+					break;
+				case 19:
+					document.getElementById("wtwb-caption").innerHTML = "The end screen";
+					break;
+				case 20:
+					document.getElementById("wtwb-caption").innerHTML = "An in-engine view of Level 1";
+					break;
+				case 21:
+					document.getElementById("wtwb-caption").innerHTML = "An in-engine view of Level 2";
+					break;
+				case 22:
+					document.getElementById("wtwb-caption").innerHTML = "An in-engine view of Level 3";
+					break;
+				case 23:
+					document.getElementById("wtwb-caption").innerHTML = "An in-engine view of Level 4. A more vertical level than the previous ones";
+					break;
+				case 24:
+					document.getElementById("wtwb-caption").innerHTML = "Lyra's model, collider and script";
+					break;
+				case 25:
+					document.getElementById("wtwb-caption").innerHTML = "The beast's model, collider and script";
+					break;
+				case 26:
+					document.getElementById("wtwb-caption").innerHTML = "The beast's animator";
+					break;
+				case 27:
+					document.getElementById("wtwb-caption").innerHTML = "Lyra's animator";
+					break;
+				default:
+					document.getElementById("wtwb-caption").innerHTML = "404 caption not found";
+			}
+		}
+
+	</script>
+</body>
+</html>
