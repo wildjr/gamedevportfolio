@@ -37,6 +37,8 @@
 
 		function PrevWTWB()
 		{
+			SetCaption(0);
+
 			if (wtwbcurrent == 1)
 				wtwbcurrent = wtwbmax;
 			else
@@ -47,6 +49,8 @@
 
 		function NextWTWB()
 		{
+			SetCaption(0);
+
 			if (wtwbcurrent == wtwbmax)
 				wtwbcurrent = 1;
 			else
@@ -59,6 +63,9 @@
 		{
 			switch(wtwbcurrent)
 			{
+				case 0:
+					document.getElementById("wtwb-caption").innerHTML = "Loading...";
+					break;				
 				case 1:
 					document.getElementById("wtwb-caption").innerHTML = "WTWB was developed for a university assignment by a team of two in Unity (C#). The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. Please note that this project was created under a time crunch, and is more of a tech demo than an actual game";
 					break;
