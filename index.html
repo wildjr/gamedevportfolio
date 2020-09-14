@@ -30,6 +30,9 @@
 		var wtwbmax = 27
 		var wtwbcurrent = 1
 
+		var wtwbimg = document.getElementById("wtwb-img");
+		wtwbimg.onload = function() { SetCaption(); console.log("hi");}
+
 		SetCaption()
 
 		function PrevWTWB()
@@ -61,7 +64,7 @@
 			switch(wtwbcurrent)
 			{
 				case 1:
-					document.getElementById("wtwb-caption").innerHTML = "WTWB was developed for a major university assignment by a team of two in Unity (C#). The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. Please note that this project was created under a time crunch";
+					document.getElementById("wtwb-caption").innerHTML = "WTWB was developed for a university assignment by a team of two in Unity (C#). The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. Please note that this project was created under a time crunch, and is more of a tech demo than an actual game";
 					break;
 				case 2:
 					document.getElementById("wtwb-caption").innerHTML = "This is Lyra, a girl who has the gift (or curse) of transforming into a beast when under direct moonlight. When the game begins, she has just escaped confinement in a top secret lab where she was being experimented on";
