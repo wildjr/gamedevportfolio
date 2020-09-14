@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gallery</title>
+	<title>Vedant's Game Dev Portfolio</title>
 	<style type="text/css">
 		img{
 			max-width: 90%;
@@ -18,14 +18,18 @@
 	</style>
 </head>
 <body>
-	//WTWB
+	<h1>Neurosys</h1>
+	<button onclick='PrevNEUROSYS()'>Prev</button>
+	<button onclick='NextNEUROSYS()'>Next</button><br><br>
+	<i><center><text id="neurosys-caption">caption goes here</text></i></center><br>
+	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br>
+
 	<h1>When The Wolfsbane Blooms</h1>
 	<button onclick='PrevWTWB()'>Prev</button>
 	<button onclick='NextWTWB()'>Next</button><br><br>
 	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br>
 	<img id="wtwb-img" src="images/wtwb-1.png" class="center"><br>
 
-	//WTWB2
 	<h1>When The Wolfsbane Blooms 2</h1>
 	<button onclick='PrevWTWB2()'>Prev</button>
 	<button onclick='NextWTWB2()'>Next</button><br><br>
@@ -251,6 +255,115 @@
 				}
 			}
 		}
+
+		//Neurosys
+		{
+			var neurosysmax = 22
+			var neurosyscurrent = 1
+			var neurosysimg = document.getElementById("neurosys-img");
+			neurosysimg.onload = function() { SetCaptionNEUROSYS(); }
+
+			SetCaptionNEUROSYS()
+
+			function PrevNEUROSYS()
+			{
+				if (neurosyscurrent == 1)
+					neurosyscurrent = neurosysmax;
+				else
+					neurosyscurrent -=1;
+
+				document.getElementById("neurosys-img").src = "images/neurosys-"+neurosyscurrent+".png";
+			}
+
+			function NextNEUROSYS()
+			{
+				if (neurosyscurrent == neurosysmax)
+					neurosyscurrent = 1;
+				else
+					neurosyscurrent +=1;
+				
+				document.getElementById("neurosys-img").src = "images/neurosys-"+neurosyscurrent+".png";
+			}
+
+			function SetCaptionNEUROSYS()
+			{
+				switch(neurosyscurrent)
+				{
+					case 0:
+						document.getElementById("neurosys-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+						document.getElementById("neurosys-caption").innerHTML = "Neurosys was developed as the capstone project for university. The simulation side of the project, showcased here, was developed by a team of two. The idea was that this simulation could potentially be used (in the presence of a licensed therapist) to aid in the treatment of Acrophobia (fear of heights) and Arachnophobia (fear of spiders). The project won third place in the UOWD Innovation Fair.";
+						break;
+					case 2:
+						document.getElementById("neurosys-caption").innerHTML = "There are 4 levels for each phobia that increase in intensity. The first Acrophobia level is quite simple: The patient must climb to the top of the stairs and...";
+						break;
+					case 3:
+						document.getElementById("neurosys-caption").innerHTML = "...look over the railing into the room below";
+						break;
+					case 4:
+						document.getElementById("neurosys-caption").innerHTML = "The second Acrophobia level is based in a city, with the patient in an elevator";
+						break;
+					case 5:
+						document.getElementById("neurosys-caption").innerHTML = "The elevator rises with the patient inside of it";
+						break;
+					case 6:
+						document.getElementById("neurosys-caption").innerHTML = "In the third Acrophobia level the patient must cross a bridge that overlooks a river";
+						break;
+					case 7:
+						document.getElementById("neurosys-caption").innerHTML = "A view from the perspective of the patient";
+						break;
+					case 8:
+						document.getElementById("neurosys-caption").innerHTML = "The final Acrophobia level involves the player travelling high up in a hot air balloon...";
+						break;
+					case 9:
+						document.getElementById("neurosys-caption").innerHTML = "...and looking out over the landscape";
+						break;
+					case 10:
+						document.getElementById("neurosys-caption").innerHTML = "The first Arachnophobia level is set inside a home, with the spider safely contained within a bowl. Please stop hitting NEXT now now if spiders make you queasy";
+						break;
+					case 11:
+						document.getElementById("neurosys-caption").innerHTML = "Just like with Acrophobia, the levels will increase in intensity. This one is relatively low intensity as the spider has no way of getting to the player";
+						break;
+					case 12:
+						document.getElementById("neurosys-caption").innerHTML = "Level 2 is set in an office. The spider(s) are once again in the bowl. However, this level allows for more spiders as well as more aggressively moving spiders";
+						break;
+					case 13:
+						document.getElementById("neurosys-caption").innerHTML = "eurgh";
+						break;
+					case 14:
+						document.getElementById("neurosys-caption").innerHTML = "The third Arachnophobia level is set in the outdoors. There is no longer any glass protecting the patient from the spiders";
+						break;
+					case 15:
+						document.getElementById("neurosys-caption").innerHTML = "It would be probable that at this stage the therapist thinks the patient is ready to deal with a lot of spiders (gradually, of course)";
+						break;
+					case 16:
+						document.getElementById("neurosys-caption").innerHTML = "And the final Arachnophobia level involves a campfire, lots of shadows and lots of spiders";
+						break;
+					case 17:
+						document.getElementById("neurosys-caption").innerHTML = "Again, to reiterate: These levels are meant to be controlled by a therapist who can judge if the level is too intense for the player";
+						break;
+					case 18:
+						document.getElementById("neurosys-caption").innerHTML = "Here are some untextured 3D meshes created by me for this project. To begin, a staircase";
+						break;
+					case 19:
+						document.getElementById("neurosys-caption").innerHTML = "A door";
+						break;
+					case 20:
+						document.getElementById("neurosys-caption").innerHTML = "Side table";
+						break;
+					case 21:
+						document.getElementById("neurosys-caption").innerHTML = "A chair";
+						break;
+					case 22:
+						document.getElementById("neurosys-caption").innerHTML = "And a television. Of course, this is just a sampling and aren't the entirety of all the models I worked on";
+						break;
+					default:
+						document.getElementById("neurosys-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+
 	</script>
 </body>
 </html>
