@@ -4,7 +4,7 @@
 	<title>Vedant's Game Dev Portfolio</title>
 	<style type="text/css">
 		img{
-			max-width: 90%;
+			max-width: 80%;
 			max-height: 90%;
 			border: solid #000;
 			border-width: 2px;
@@ -19,16 +19,22 @@
 </head>
 <body>
 	<h1>Neurosys</h1>
-	<button onclick='PrevNEUROSYS()'>Prev</button>
-	<button onclick='NextNEUROSYS()'>Next</button><br><br>
+	<button onclick='PrevNeurosys()'>Prev</button>
+	<button onclick='NextNeurosys()'>Next</button><br><br>
 	<i><center><text id="neurosys-caption">caption goes here</text></i></center><br>
-	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br>
+	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br><hr size="2px" noshade>
+
+	<h1>Scroodle</h1>
+	<button onclick='PrevScroodle()'>Prev</button>
+	<button onclick='NextScroodle()'>Next</button><br><br>
+	<i><center><text id="scroodle-caption">caption goes here</text></i></center><br>
+	<img id="scroodle-img" src="images/scroodle-1.png" class="center"><br><hr size="2px" noshade>
 
 	<h1>When The Wolfsbane Blooms</h1>
 	<button onclick='PrevWTWB()'>Prev</button>
 	<button onclick='NextWTWB()'>Next</button><br><br>
 	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br>
-	<img id="wtwb-img" src="images/wtwb-1.png" class="center"><br>
+	<img id="wtwb-img" src="images/wtwb-1.png" class="center"><br><hr size="2px" noshade>
 
 	<h1>When The Wolfsbane Blooms 2</h1>
 	<button onclick='PrevWTWB2()'>Prev</button>
@@ -261,11 +267,11 @@
 			var neurosysmax = 22
 			var neurosyscurrent = 1
 			var neurosysimg = document.getElementById("neurosys-img");
-			neurosysimg.onload = function() { SetCaptionNEUROSYS(); }
+			neurosysimg.onload = function() { SetCaptionNeurosys(); }
 
-			SetCaptionNEUROSYS()
+			SetCaptionNeurosys()
 
-			function PrevNEUROSYS()
+			function PrevNeurosys()
 			{
 				if (neurosyscurrent == 1)
 					neurosyscurrent = neurosysmax;
@@ -275,7 +281,7 @@
 				document.getElementById("neurosys-img").src = "images/neurosys-"+neurosyscurrent+".png";
 			}
 
-			function NextNEUROSYS()
+			function NextNeurosys()
 			{
 				if (neurosyscurrent == neurosysmax)
 					neurosyscurrent = 1;
@@ -285,7 +291,7 @@
 				document.getElementById("neurosys-img").src = "images/neurosys-"+neurosyscurrent+".png";
 			}
 
-			function SetCaptionNEUROSYS()
+			function SetCaptionNeurosys()
 			{
 				switch(neurosyscurrent)
 				{
@@ -360,6 +366,96 @@
 						break;
 					default:
 						document.getElementById("neurosys-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+
+		//Scroodle
+		{
+			var scroodlemax = 16
+			var scroodlecurrent = 1
+			var scroodleimg = document.getElementById("scroodle-img");
+			scroodleimg.onload = function() { SetCaptionScroodle(); }
+
+			SetCaptionScroodle()
+
+			function PrevScroodle()
+			{
+				if (scroodlecurrent == 1)
+					scroodlecurrent = scroodlemax;
+				else
+					scroodlecurrent -=1;
+
+				document.getElementById("scroodle-img").src = "images/scroodle-"+scroodlecurrent+".png";
+			}
+
+			function NextScroodle()
+			{
+				if (scroodlecurrent == scroodlemax)
+					scroodlecurrent = 1;
+				else
+					scroodlecurrent +=1;
+				
+				document.getElementById("scroodle-img").src = "images/scroodle-"+scroodlecurrent+".png";
+			}
+
+			function SetCaptionScroodle()
+			{
+				switch(scroodlecurrent)
+				{
+					case 0:
+						document.getElementById("scroodle-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+						document.getElementById("scroodle-caption").innerHTML = "Scroodle is a proof of concept of an asymmetrical co-operative multiplayer game. The two players are Blobby (top screen) and The Hand (bottom screen). In the full game, the two players would be playing on separate devices (perhaps mobile phones) and will not be able to see each others' screens or speak to each other..";
+						break;
+					case 2:
+						document.getElementById("scroodle-caption").innerHTML = "These captions will demonstrate the various things both players can do. The objective is for the players to work together to get Blobby to the end of the level";
+						break;
+					case 3:
+						document.getElementById("scroodle-caption").innerHTML = "Blobby is able to performa a limited set of emotes. In this example, Blobby is requesting a bridge since it would not be able to jump over the gap";
+						break;
+					case 4:
+						document.getElementById("scroodle-caption").innerHTML = "Blobby is also able to point, similar to how a laser pointer works. This, combined with the emotes, are the only way for Blobby to communicate with The Hand";
+						break;
+					case 5:
+						document.getElementById("scroodle-caption").innerHTML = "The Hand has created a bridge, allowing Blobby to cross it. In this demo, there are 4 objects that The Hand can create, but the idea is for objects to be created via swiping and will theoretically be infinite and up to the player's imagination";
+						break;
+					case 6:
+						document.getElementById("scroodle-caption").innerHTML = "As you can see, creating objects requires 'ink' (top-right corner of the bottom screen). Blobby can collect coins to refill the ink reserve, thus contributing to the team";
+						break;
+					case 7:
+						document.getElementById("scroodle-caption").innerHTML = "Blobby cannot jump that high and requests a box to jump on...";
+						break;
+					case 8:
+						document.getElementById("scroodle-caption").innerHTML = "...which The Hand creates. Do note that the Hand does not need to wait for Blobby's suggestions to start creating objects";
+						break;
+					case 9:
+						document.getElementById("scroodle-caption").innerHTML = "Blobby needs to head up but is faced with a wall. The Hand has a more wide field of view, and it is able to spot a trampoline (placeholder sprite of a bush used) attached to balloons";
+						break;
+					case 10:
+						document.getElementById("scroodle-caption").innerHTML = "By adding weight to the trampoline, The Hand has managed to bring it down for Blobby";
+						break;
+					case 11:
+						document.getElementById("scroodle-caption").innerHTML = "And Blobby can use it to leap right over the wall";
+						break;
+					case 12:
+						document.getElementById("scroodle-caption").innerHTML = "Another situation where The Hand's wider field of view comes in handy. Enemies!";
+						break;
+					case 13:
+						document.getElementById("scroodle-caption").innerHTML = "If Blobby isn't careful coming down the slide, it's Game Over as the enemies will kill it on contact";
+						break;
+					case 14:
+						document.getElementById("scroodle-caption").innerHTML = "There are many ways around this obstacle. A sphere sent rolling down the hill will push both eyeballs into the spikes. A box can allow Blobby to jump right over them. A bridge allows Blobby to climb over without coming in direct contact. The method is, once again, left to the players' imagination";
+						break;
+					case 15:
+						document.getElementById("scroodle-caption").innerHTML = "The spikes are also dangerous to Blobby, so The Hand needs to create a bridge. A limited amount of ink ensures that The Hand can't simply create a bridge over every single obstacle or directly to the end";
+						break;
+					case 16:
+						document.getElementById("scroodle-caption").innerHTML = "Blobby has retrieved the treasure, winning the game for the team";
+						break;
+					default:
+						document.getElementById("scroodle-caption").innerHTML = "404 caption not found";
 				}
 			}
 		}
