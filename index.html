@@ -18,25 +18,37 @@
 	</style>
 </head>
 <body>
-	<h1>Neurosys</h1>
+	<h1>Spacing Out (2019~)</h1>
+	<button onclick='PrevSO()'>Prev</button>
+	<button onclick='NextSO()'>Next</button><br><br>
+	<i><center><text id="so-caption">caption goes here</text></i></center><br>
+	<video id="so-vid" height="720px" controls class="center"><source src="videos/so-1.mp4" type="video/mp4"></video><br><hr size="2px" noshade>
+
+	<h1>Winter Tower Defense (2018)</h1>
+	<button onclick='PrevWTD()'>Prev</button>
+	<button onclick='NextWTD()'>Next</button><br><br>
+	<i><center><text id="wtd-caption">caption goes here</text></i></center><br>
+	<img id="wtd-img" src="images/wtd-1.png" class="center"><br><hr size="2px" noshade>
+
+	<h1>Neurosys (2017-2018)</h1>
 	<button onclick='PrevNeurosys()'>Prev</button>
 	<button onclick='NextNeurosys()'>Next</button><br><br>
 	<i><center><text id="neurosys-caption">caption goes here</text></i></center><br>
 	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br><hr size="2px" noshade>
 
-	<h1>Scroodle</h1>
+	<h1>Scroodle (2017)</h1>
 	<button onclick='PrevScroodle()'>Prev</button>
 	<button onclick='NextScroodle()'>Next</button><br><br>
 	<i><center><text id="scroodle-caption">caption goes here</text></i></center><br>
 	<img id="scroodle-img" src="images/scroodle-1.png" class="center"><br><hr size="2px" noshade>
 
-	<h1>When The Wolfsbane Blooms</h1>
+	<h1>When The Wolfsbane Blooms (2017)</h1>
 	<button onclick='PrevWTWB()'>Prev</button>
 	<button onclick='NextWTWB()'>Next</button><br><br>
 	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br>
 	<img id="wtwb-img" src="images/wtwb-1.png" class="center"><br><hr size="2px" noshade>
 
-	<h1>When The Wolfsbane Blooms 2</h1>
+	<h1>When The Wolfsbane Blooms 2 (2017)</h1>
 	<button onclick='PrevWTWB2()'>Prev</button>
 	<button onclick='NextWTWB2()'>Next</button><br><br>
 	<i><center><text id="wtwb2-caption">caption goes here</text></i></center><br>
@@ -338,7 +350,7 @@
 						document.getElementById("neurosys-caption").innerHTML = "eurgh";
 						break;
 					case 14:
-						document.getElementById("neurosys-caption").innerHTML = "The third Arachnophobia level is set in the outdoors. There is no longer any glass protecting the patient from the spiders";
+						document.getElementById("neurosys-caption").innerHTML = "The third Arachnophobia level is set in the ouwtdoors. There is no longer any glass protecting the patient from the spiders";
 						break;
 					case 15:
 						document.getElementById("neurosys-caption").innerHTML = "It would be probable that at this stage the therapist thinks the patient is ready to deal with a lot of spiders (gradually, of course)";
@@ -456,6 +468,125 @@
 						break;
 					default:
 						document.getElementById("scroodle-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+
+		//SO
+		{
+			var somax = 4
+			var socurrent = 1
+			// var soimg = document.getElementById("so-img");
+			// soimg.onload = function() { SetCaptionSO(); }
+
+			SetCaptionSO()
+
+			function PrevSO()
+			{
+				if (socurrent == 1)
+					socurrent = somax;
+				else
+					socurrent -=1;
+
+				document.getElementById("so-img").src = "videos/so-"+socurrent+".mp4";
+				
+				SetCaptionSO();
+			}
+
+			function NextSO()
+			{
+				if (socurrent == somax)
+					socurrent = 1;
+				else
+					socurrent +=1;
+				
+				document.getElementById("so-vid").src = "videos/so-"+socurrent+".mp4";
+
+				SetCaptionSO();
+			}
+
+			function SetCaptionSO()
+			{
+				switch(socurrent)
+				{
+					case 0:
+						document.getElementById("so-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+						document.getElementById("so-caption").innerHTML = "Spacing Out is my current project, coming soon to the Play Store. It is still a work in progress, and a lot of the sprites and text are placeholders. The art style I'm aiming for is pencil drawn, with a slightly rough around the edges feel, almost as if it came out of someone's imagination. The concept is that you play as a group of astronauts stranded in space. The only way to move in space is by throwing something in the opposite direction, and that forms the core of gameplay. The objective is to get to the 'safe zone' where you can then be rescued by your colleagues";
+						break;
+					case 2:
+						document.getElementById("so-caption").innerHTML = "But of course, throwing balls isn't the only way to move. Your equipment can vary from level to level. A fire extinguisher allows for more continuous movement and allows for turning sharp corners more easily";
+						break;
+					case 3:
+						document.getElementById("so-caption").innerHTML = "A can of compressed O2 isn't just good for survival. Pfft, who needs to breathe anyway? You can use it to break through weak walls with an explosion.<br>The BOOM sprite is very much a placeholder, it just really amused me to have a crudely drawn Paint sprite in the game. Please ignore, thanks";
+						break;
+					case 4:
+						document.getElementById("so-caption").innerHTML = "There will also be various interactable elements, such as wormholes, which will add variety to the levels";
+						break;
+					default:
+						document.getElementById("so-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+
+
+		//WTD
+		{
+			var wtdmax = 6
+			var wtdcurrent = 1
+			var wtdimg = document.getElementById("wtd-img");
+			wtdimg.onload = function() { SetCaptionWTD(); }
+
+			SetCaptionWTD()
+
+			function PrevWTD()
+			{
+				if (wtdcurrent == 1)
+					wtdcurrent = wtdmax;
+				else
+					wtdcurrent -=1;
+
+				document.getElementById("wtd-img").src = "images/wtd-"+wtdcurrent+".png";
+			}
+
+			function NextWTD()
+			{
+				if (wtdcurrent == wtdmax)
+					wtdcurrent = 1;
+				else
+					wtdcurrent +=1;
+				
+				document.getElementById("wtd-img").src = "images/wtd-"+wtdcurrent+".png";
+			}
+
+			function SetCaptionWTD()
+			{
+				switch(wtdcurrent)
+				{
+					case 0:
+						document.getElementById("wtd-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+						document.getElementById("wtd-caption").innerHTML = "Winter Tower Defense is a game created in Unreal Engine for an assignment. An important thing to note is that this assignment was planned to have a 2-person development team, but this game was developed solo. As such, some features aren't implemented in the way that was originally planned.";
+						break;
+					case 2:
+						document.getElementById("wtd-caption").innerHTML = "WTD is a first person shooter where you are in charge of protecting your castle. Bombs roll towards your castle from far away, and you shoot snowballs at them to stop them";
+						break;
+					case 3:
+						document.getElementById("wtd-caption").innerHTML = "Bombs drain the health of your castle (top left corner) and eliminating bombs gives you points";
+						break;
+					case 4:
+						document.getElementById("wtd-caption").innerHTML = "Paused. Take a breather.";
+						break;
+					case 5:
+						document.getElementById("wtd-caption").innerHTML = "When the castle's health drops to zero, it's Game Over";
+						break;
+					case 6:
+						document.getElementById("wtd-caption").innerHTML = "Here's an aerial view of the castle";
+						break;
+					default:
+						document.getElementById("wtd-caption").innerHTML = "404 caption not found";
 				}
 			}
 		}
