@@ -23,55 +23,62 @@
 <body>
 	<h1>Spacing Out (2019~)</h1>
 	<text>Description: Spacing Out is my current project, coming soon to the Play Store. It is still a work in progress, and a lot of the sprites and text are placeholders. The art style I'm aiming for is pencil drawn, with a slightly rough around the edges feel, almost as if it came out of someone's imagination. The concept is that it is a 2D physics based game with puzzle elements created in Unity (C#) where you play as a group of astronauts stranded in space due to an accident. The only way to move in space is by throwing something in the opposite direction, and that forms the core of gameplay. The objective is to get to the 'safe zone' where you can be rescued by your colleagues.</text><br><br>
-	<text>My Role: <br>&bull; Solo programmer and artist<br>&bull; Created, and will be creating, all assets, scripts and prefabs for this game<br>&bull; Creation of an introductory cutscene using animations and scripts<br>&bull; Scripting various objects and their behaviours (balls, fire extinguishers, wormholes, etc)<br>&bull; Created animations for cutscenes and astronauts</text><br><br>
+	<text>My Role: <br>&bull; Solo programmer and artist<br>&bull; Created, and will be creating, all assets, scripts and prefabs for this game<br>&bull; Creation of an introductory cutscene using animations and scripts<br>&bull; Scripting various objects and their behaviours, such as:<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Balls: The basic throwable object. An astronaut can throw it to fly in the opposite direction<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Fire extinguishers: Give a more continuous movement. Can be used to round tight corners without having to use 3 balls, for example<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; O2 canister: Can create a controlled explosion to break weak walls<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Wormholes: A feature in some levels which teleports the player to another wormhole<br>&bull; Created animations for cutscenes and astronauts</text><br><br>
 	<a href="downloads/SpacingOut_alpha1.2.apk">Click here to download the latest apk (Alpha v1.2)</a><br><br>
-	<button onclick='PrevSO()'>Prev</button>
-	<button onclick='NextSO()'>Next</button><br><br>
+	<video id="so-vid" controls class="center"><source src="videos/so-1.mp4" type="video/mp4"></video><br>
 	<i><center><text id="so-caption">caption goes here</text></i></center><br>
-	<video id="so-vid" controls class="center"><source src="videos/so-1.mp4" type="video/mp4"></video><br><hr size="2px" noshade>
-
-	<h1>Unreal Projects (2018)</h1>
-	<text>1. Winter Tower Defense is a first person shooter game created in Unreal Engine for Windows</text><br><br>
+	<div style="text-align: center;"><button onclick='PrevSO()'>Prev</button>
+	<button onclick='NextSO()'>Next</button></div></div><br><br><hr size="2px" noshade>
+	
+	<h1>Winter Tower Defense (2018)</h1>
+	<text>Winter Tower Defense is a first person shooter game created in Unreal Engine for Windows. It was one of two assignments where I could work on something of my choosing, and is a small game to get me used to creating games in Unreal.</text><br><br>
 	<text>My Role: <br>&bull; Solo developer<br>&bull; Modified and used the existing first person player to meet the needs of the game<br>&bull; Used blueprints to control:<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The spawning and behaviour of bombs<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The shooting of snowballs<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The interactions between snowballs and bombs<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Scoring<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Castle health and game over conditions</text><br><br>
-	<text>2. Simple Platformer is a third person platformer created in Unreal Engine for Windows</text><br><br>
+	<a href="https://www.dropbox.com/s/d9pgbqgn9zwwpma/Winter%20Tower%20Defense.zip?dl=1">Click here to download a playable build</a><br><br>
+	<img id="wtd-img" src="images/wtd-1.png" class="center"><br>
+	<i><center><text id="wtd-caption">caption goes here</text></i></center><br>
+	<div style="text-align: center;"><button onclick='PrevWTD()'>Prev</button>
+	<button onclick='NextWTD()'>Next</button></div><br><br><hr size="2px" noshade>
+
+	<h1>Simple Platformer (2018)</h1>
+	<text>Simple Platformer is a third person platformer created in Unreal Engine for Windows. It was one of two assignments where I could work on something of my choosing, and is a small game to get me used to creating games in Unreal.</text><br><br>
 	<text>My Role: <br>&bull; Solo developer<br>&bull; Modified and used the existing third person character to meet the needs of the game<br>&bull; Used blueprints to control:<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The collection of orbs and scoring<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The interactions between the player and spikes (losing health)<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The game over conditions based on health or player position<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; The win condition</text><br><br>
-	<a href="https://www.dropbox.com/s/gxy1r7e54fq2yuf/Unreal_Projects.zip?dl=1">Click here to download a playable build of both games</a><br><br>
-	<button onclick='PrevUP()'>Prev</button>
-	<button onclick='NextUP()'>Next</button><br><br>
-	<i><center><text id="up-caption">caption goes here</text></i></center><br>
-	<img id="up-img" src="images/up-1.png" class="center"><br><hr size="2px" noshade>
+	<a href="https://www.dropbox.com/s/kssxpbxs9e9gowq/Simple%20Platformer.zip?dl=1">Click here to download a playable build</a><br><br>
+	<img id="sp-img" src="images/sp-1.png" class="center"><br>
+	<i><center><text id="sp-caption">caption goes here</text></i></center><br>
+	<div style="text-align: center;"><button onclick='PrevSP()'>Prev</button>
+	<button onclick='NextSP()'>Next</button></div><br><br><hr size="2px" noshade>
 
 	<h1>Neurosys (2017-2018)</h1>
-	<text>Description: Neurosys was the capstone project for university. The project can be broken down into a simulation (Unity C# for Samsung Gear VR) and app development. The simulation side of the project, showcased here, was developed by a team of two. The idea was that this simulation could potentially be used (in the presence of a licensed therapist) to aid in the treatment of Acrophobia (fear of heights) and Arachnophobia (fear of spiders). The project won third place in the UOWD Innovation Fair</text><br><br>
-	<text>My Role: <br>&bull; Co-lead developer for the simulation<br>&bull; 3D modelled most objects in the Acrophobia scenes using Autodesk Maya<br>&bull; Helped with level planning and design across the board<br>&bull; Design implemention for the Acrophobia levels<br>&bull; All Acrophobia scripts including hot-air balloon and elevator controls<br>&bull; Terrain sculpting using Unity's terrain toolds<br>&bull; UI implementation+controls</text><br><br>
-	<button onclick='PrevNeurosys()'>Prev</button>
-	<button onclick='NextNeurosys()'>Next</button><br><br>
+	<text>Description: Neurosys was the capstone project for university. The project can be broken down into a simulation (Unity C# for Samsung Gear VR) and app development. The simulation side of the project, showcased here, was developed by a team of two. The idea was that this simulation could potentially be used (in the presence of a licensed therapist) to aid in the treatment of Acrophobia (fear of heights) and Arachnophobia (fear of spiders). The project won third place in the UOWD Innovation Fair.</text><br><br>
+	<text>My Role: <br>&bull; Co-lead developer for the simulation<br>&bull; 3D modelled most objects in the Acrophobia scenes using Autodesk Maya including<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Staircase<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Door<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Table<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Chair<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; TV<br>&bull; Helped with level planning and design across the board, including setting parameters for how intense each level needs to be, variables that the therapist can control within each level, locations of objects and hazards in the levels, etc<br>&bull; Design implemention for the Acrophobia levels<br>&bull; All Acrophobia scripts including hot-air balloon and elevator controls<br>&bull; Terrain sculpting using Unity's terrain toolds<br>&bull; UI implementation+controls</text><br><br>
+	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br>
 	<i><center><text id="neurosys-caption">caption goes here</text></i></center><br>
-	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br><hr size="2px" noshade>
+	<div style="text-align: center;"><button onclick='PrevNeurosys()'>Prev</button>
+	<button onclick='NextNeurosys()'>Next</button></div><br><br><hr size="2px" noshade>
 
 	<h1>Scroodle (2017)</h1>
 	<text>Description: Scroodle is a proof of concept of an asymmetrical co-operative multiplayer 2D game with platforming elements created in Unity (C#) for Windows. The two players are Blobby and The Hand. The Hand needs to keep Blobby alive and get it to the end of the level, while Blobby contributes by collecting resources for The Hand to use.</text><br><br>
 	<text>My Role: <br>&bull; Solo developer<br>&bull; Wrote all scripts, created animation paths, prefabs, etc<br>&bull; Note: The sprites were the only thing not created by me, as they were imported from a Unity asset package</text><br><br>
-	<a href="downloads/Scroodle.zip">Click here to download a playable build (v1.0)</a><br><br>
-	<button onclick='PrevScroodle()'>Prev</button>
-	<button onclick='NextScroodle()'>Next</button><br><br>
+	<a href="downloads/Scroodle.zip">Click here to download a playable build</a><br><br>
+	<img id="scroodle-img" src="images/scroodle-1.png" class="center"><br>
 	<i><center><text id="scroodle-caption">caption goes here</text></i></center><br>
-	<img id="scroodle-img" src="images/scroodle-1.png" class="center"><br><hr size="2px" noshade>
+	<div style="text-align: center;"><button onclick='PrevScroodle()'>Prev</button>
+	<button onclick='NextScroodle()'>Next</button></div><br><br><hr size="2px" noshade>
 
 	<h1>When The Wolfsbane Blooms (2017)</h1>
-	<text>Description: WTWB is a 2.5D platformer which was developed for a university assignment by a team of two in Unity (C#) for Windows. The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. Please note that this project was created under a time crunch, and is more of a tech demo than an actual game. The game follows Lyra, a girl who has the gift (or curse) of transforming into a beast when under direct moonlight</text><br><br>
-	<text>My Role: <br>&bull; Game Programmer<br>&bull; Worked on some aspects of the the beast and Lyra's movements (especially wall climbing) using a combination of Unity's triggers and colliders<br>&bull; Used finite state machines for enemies, plus used FSMs to decide how NPCs (civilian and otherwise) react to the beast.<br>&bull; Contributed to level design<br>&bull; Programmed the UI display, especially notable in the last few screenshots, including the health bar's changing colours and switching the player icon</text><br><br>
-	<a href="downloads/WTWB_build2.zip">Click here to download a playable build (v1.0)</a><br><br>
-	<button onclick='PrevWTWB()'>Prev</button>
-	<button onclick='NextWTWB()'>Next</button><br><br>
-	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br>
+	<text>Description: WTWB is a 2.5D platformer which was developed for a university assignment by a team of two in Unity (C#) for Windows. The models and animations are from Mixamo, as the assignment was testing game scripting rather than animation or modelling. The game follows Lyra, a girl who has the gift (or curse) of transforming into a beast when under direct moonlight</text><br><br>
+	<text>My Role: <br>&bull; Game Programmer<br>&bull; Worked on some aspects of the the beast and Lyra's movements (especially wall climbing) using a combination of Unity's triggers and colliders<br>&bull; Used finite state machines for enemies, plus used FSMs to decide how NPCs (civilian and otherwise) react to the beast.<br>&bull; Contributed to level design<br>&bull; Programmed the UI display, especially notable in the last few screenshots, including the health bar's changing colours and switching the player icon when transforming between Lyra and the beast</text><br><br>
+	<a href="downloads/WTWB_build2.zip">Click here to download a playable build</a><br><br>
 	<img id="wtwb-img" src="images/wtwb-1.png" class="center">
-	<video id="wtwb-vid" controls class="center" style="display: none;"><source src="videos/wtwb-36.mp4" type="video/mp4"></video><br><hr size="2px" noshade>
+	<video id="wtwb-vid" controls class="center" style="display: none;"><source src="videos/wtwb-36.mp4" type="video/mp4"></video><br>
+	<i><center><text id="wtwb-caption">caption goes here</text></i></center><br>
+	<div style="text-align: center;"><button onclick='PrevWTWB()'>Prev</button>
+	<button onclick='NextWTWB()'>Next</button></div><br><br><hr size="2px" noshade>
 
 	<h1>Hue Man (2016)</h1>
 	<text>Description: Hue Man is a 2D side scrolling game created in Unity for Android phones. The objective is for the superhero, Hue Man, to collect orbs. Hue Man can change his colour by using the buttons at the bottom, and can only collect an orb if he matches the colour of the orb. Successfully collecting an orb gives +1 score and +3 seconds, but collecting an orb of the wrong colour gives -2 seconds. The game speeds up as time goes on, and is over when time runs out</text><br><br>
 	<text>My Role: <br>&bull; Lead designer and art director<br>&bull; Helped in the design of the game and mechanics<br>&bull; Helped to find the general feel of the art style<br>&bull; Created sprites</text><br><br>
-	<a href="downloads/HueMan_v1.0.apk">Click here to download a playable apk (v1.0)</a><br><br>
+	<a href="downloads/HueMan_v1.0.apk">Click here to download a playable apk</a><br><br>
 	<!--button onclick='PrevWTWB2()'>Prev</button>
 	<button onclick='NextWTWB2()'>Next</button><br><br-->
 	<video controls class="center"><source src="videos/hm-1.mp4" type="video/mp4"></video><br><hr size="2px" noshade>
@@ -79,11 +86,11 @@
 	<h1>Pokémon: Battle Arena (2014)</h1>
 	<text>Description: PBA is a fan-made tribute to the Pokémon series made in C++ for Windows. Players are thrown into a room with 4 other trainers and must defeat them all in order to win. Each battle consists of 3 rounds, with randomly selected Pokémon on either side.</text><br><br>
 	<text>My Role: <br>&bull; Lead programmer<br>&bull; Worked on every aspect of the game except graphics<br>&bull; Involved high complexity class and object design (IVs, EVs, stats), as well as high complexity programming<br>&bull; Implementation of numerous functions for the battle system (including complex attacks)</text><br><br>
-	<a href="downloads/Pokemon_-_Battle_Arena.rar">Click here to download a playable build (v1.0)</a><br><br>
-	<button onclick='PrevPBA()'>Prev</button>
-	<button onclick='NextPBA()'>Next</button><br><br>
-	<i><center><text id="pba-caption">caption goes here</text></i></center><br>
+	<a href="downloads/Pokemon_-_Battle_Arena.rar">Click here to download a playable build</a><br><br>
 	<img id="pba-img" src="images/pba-1.png" class="center"><br>
+	<i><center><text id="pba-caption">caption goes here</text></i></center><br>
+	<div style="text-align: center;"><button onclick='PrevPBA()'>Prev</button>
+	<button onclick='NextPBA()'>Next</button></div><br><br>
 
 	<script type="text/javascript">
 		//WTWB
@@ -477,7 +484,7 @@
 				else
 					socurrent -=1;
 
-				document.getElementById("so-img").src = "videos/so-"+socurrent+".mp4";
+				document.getElementById("so-vid").src = "videos/so-"+socurrent+".mp4";
 				
 				SetCaptionSO();
 			}
@@ -508,7 +515,7 @@
 						document.getElementById("so-caption").innerHTML = "But of course, throwing balls isn't the only way to move. Your equipment can vary from level to level. A fire extinguisher allows for more continuous movement and allows for turning sharp corners more easily";
 						break;
 					case 3:
-						document.getElementById("so-caption").innerHTML = "A can of compressed O2 isn't just good for survival. Pfft, who needs to breathe anyway? You can use it to break through weak walls with an explosion.<br>The BOOM sprite is very much a placeholder, it just really amused me to have a crudely drawn Paint sprite in the game. Please ignore, thanks";
+						document.getElementById("so-caption").innerHTML = "A can of compressed O2 isn't just good for survival. Pfft, who needs to breathe anyway? You can use it to break through weak walls with an explosion.";
 						break;
 					case 4:
 						document.getElementById("so-caption").innerHTML = "There will also be various interactable elements, such as wormholes, which will add variety to the levels";
@@ -519,80 +526,124 @@
 			}
 		}
 
-		//UP
+		//WTD
 		{
-			var upmax = 11
-			var upcurrent = 1
-			var upimg = document.getElementById("up-img");
-			upimg.onload = function() { SetCaptionUP(); }
+			var wtdmax = 5
+			var wtdcurrent = 1
+			var wtdimg = document.getElementById("wtd-img");
+			wtdimg.onload = function() { SetCaptionWTD(); }
 
-			SetCaptionUP()
+			SetCaptionWTD()
 
-			function PrevUP()
+			function PrevWTD()
 			{
-				if (upcurrent == 1)
-					upcurrent = upmax;
+				if (wtdcurrent == 1)
+					wtdcurrent = wtdmax;
 				else
-					upcurrent -=1;
+					wtdcurrent -=1;
 
-				document.getElementById("up-img").src = "images/up-"+upcurrent+".png";
+				document.getElementById("wtd-img").src = "images/wtd-"+wtdcurrent+".png";
 			}
 
-			function NextUP()
+			function NextWTD()
 			{
-				if (upcurrent == upmax)
-					upcurrent = 1;
+				if (wtdcurrent == wtdmax)
+					wtdcurrent = 1;
 				else
-					upcurrent +=1;
+					wtdcurrent +=1;
 				
-				document.getElementById("up-img").src = "images/up-"+upcurrent+".png";
+				document.getElementById("wtd-img").src = "images/wtd-"+wtdcurrent+".png";
 			}
 
-			function SetCaptionUP()
+			function SetCaptionWTD()
 			{
-				switch(upcurrent)
+				switch(wtdcurrent)
 				{
 					case 0:
-						document.getElementById("up-caption").innerHTML = "Loading...";
+						document.getElementById("wtd-caption").innerHTML = "Loading...";
 						break;				
 					case 1:
-						document.getElementById("up-caption").innerHTML = "Winter Tower Defense is a first person shooter where you are in charge of protecting your castle. Bombs roll towards your castle from far away, and you shoot snowballs at them to stop them";
+						document.getElementById("wtd-caption").innerHTML = "Winter Tower Defense is a first person shooter where you are in charge of protecting your castle. Bombs roll towards your castle from far away, and you shoot snowballs at them to stop them";
 						break;
 					case 2:
-						document.getElementById("up-caption").innerHTML = "Bombs drain the health of your castle (top left corner) and eliminating bombs gives you points";
+						document.getElementById("wtd-caption").innerHTML = "Bombs drain the health of your castle (top left corner) and eliminating bombs gives you points";
 						break;
 					case 3:
-						document.getElementById("up-caption").innerHTML = "Paused. Take a breather.";
+						document.getElementById("wtd-caption").innerHTML = "Paused. Take a breather.";
 						break;
 					case 4:
-						document.getElementById("up-caption").innerHTML = "When the castle's health drops to zero, it's Game Over";
+						document.getElementById("wtd-caption").innerHTML = "When the castle's health drops to zero, it's Game Over";
 						break;
 					case 5:
-						document.getElementById("up-caption").innerHTML = "Here's an aerial view of the castle";
-						break;
-					case 6:
-						document.getElementById("up-caption").innerHTML = "Simple Platformer is a... uhhh... simple platformer";
-						break;
-					case 7:
-						document.getElementById("up-caption").innerHTML = "Collecting orbs gives 100 points each";
-						break;
-					case 8:
-						document.getElementById("up-caption").innerHTML = "The objective is to jump from platform to platform and reach the end";
-						break;
-					case 9:
-						document.getElementById("up-caption").innerHTML = "Spikes cause you to lose health";
-						break;
-					case 10:
-						document.getElementById("up-caption").innerHTML = "Falling or losing all health means game over";
-						break;
-					case 11:
-						document.getElementById("up-caption").innerHTML = "Reaching the end of the level: victory!";
+						document.getElementById("wtd-caption").innerHTML = "Here's an aerial view of the castle";
 						break;
 					default:
-						document.getElementById("up-caption").innerHTML = "404 caption not found";
+						document.getElementById("wtd-caption").innerHTML = "404 caption not found";
 				}
 			}
 		}
+
+		//SP
+		{
+			var spmax = 6
+			var spcurrent = 1
+			var spimg = document.getElementById("sp-img");
+			spimg.onload = function() { SetCaptionSP(); }
+
+			SetCaptionSP()
+
+			function PrevSP()
+			{
+				if (spcurrent == 1)
+					spcurrent = spmax;
+				else
+					spcurrent -=1;
+
+				document.getElementById("sp-img").src = "images/SP-"+spcurrent+".png";
+			}
+
+			function NextSP()
+			{
+				if (spcurrent == spmax)
+					spcurrent = 1;
+				else
+					spcurrent +=1;
+				
+				document.getElementById("sp-img").src = "images/SP-"+spcurrent+".png";
+			}
+
+			function SetCaptionSP()
+			{
+				switch(spcurrent)
+				{
+					case 0:
+						document.getElementById("sp-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+						document.getElementById("sp-caption").innerHTML = "Simple Platformer is a 2.5D platformer";
+						break;
+					case 2:
+						document.getElementById("sp-caption").innerHTML = "Collecting orbs gives 100 points each";
+						break;
+					case 3:
+						document.getElementById("sp-caption").innerHTML = "The objective is to jump from platform to platform and reach the end";
+						break;
+					case 4:
+						document.getElementById("sp-caption").innerHTML = "Spikes cause you to lose health";
+						break;
+					case 5:
+						document.getElementById("sp-caption").innerHTML = "Falling or losing all health means game over";
+						break;
+					case 6:
+						document.getElementById("sp-caption").innerHTML = "Reaching the end of the level: victory!";
+						break;
+					default:
+						document.getElementById("sp-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+
+
 
 		//PBA
 		{
