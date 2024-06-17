@@ -21,33 +21,49 @@
 	</style>
 </head>
 <body>
-	<!--Future additions: 3d modelling nunchucks, MAF games, Watfa AR project-->
-
 	Note: I have yet to implement pre-loading of images and videos, so please wait a second after clicking Next or Prev and the media will load. Thanks!
 	<br><br><hr size="2px" noshade>	
 
-	<h1>Current Project (2021~)</h1>
-	<text>Description: Currently working at PepUp Studios/Maple Infosystems as a Unity Developer Intern, worked on two projects for Android/iOS: a prototype for a third person shooter and the update to an existing project known as Traffic Flow.</text><br><br>
-	<text>My Role (so far): 
+	<h1>Virtual Reality Application with Heart Rate Tracking to Study Social Anxiety (2023~)</h1>
+	<text>Description: This was my dissertation project at HWU: A Virtual Reality application that plays 360° videos and monitors user's heart rate to track anxiety. I used Unity to build for the original Oculus Rift, with a Polar H10 heart rate sensor connected to the user. As this was a solo project, all work showcased here is my own.</text><br><br>
+	<text>My Role: <br>
+		&bull; Mechanism to play 360° videos in Unity, and controller support to pause, play, and stop the video.<br>
+		&bull; Log file to track video play data<br>
+		&bull; API calls to the Polar H10 heart rate sensor to retrieve HR data, then correlate the data to the video log file<br><br>
+	<text>Now that I've completed my degree, I'm working with my dissertation supervisor to publish the results as a paper. Please watch this space for further updates and screenshots.</text>
+	<br><br><hr size="2px" noshade>
+
+	<h1>Arabic Scrabble Game (2021)</h1>
+	<text>Description: Worked at Shamsi Studios as a Unity Developer, and worked on an Arabic Scrabble game.</text><br><br>
+	<text>My Role: <br>
+		&bull; Most of my time was spent on one script, where I was responsible for creating a high-complexity algorithm for powerups, and optimising it to run without any noticeable delay for the user. Key considerations were how to speed up a dictionary search based on the unique parameters of each powerup
+	<br><br><hr size="2px" noshade>
+
+
+	<h1>Third Person Shooter & Traffic Flow (2021)</h1>
+	<text>Description: Worked at PepUp Studios/Maple Infosystems as a Unity Developer Intern, and was part of two projects for Android: a prototype for a third person shooter and an update to an existing project known as Traffic Flow.</text><br><br>
+	<text>My Role: 
 		<br>&bull;Third Person Shooter Project: (release pending) 
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Helped in creating the character controller, including movement from virtual analog stick, swipe controls for camera and auto rotation to face enemies. 
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Contributed to design and implementation of one level
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Contributed to UI design of health bars and fixing UVs of props for an in-game mechanic
 		<br><br>&bull;Traffic Flow:
-			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Worked on the second release prototype for Traffic Flow, as well as related ad campaign. <a href="https://play.google.com/store/apps/details?id=com.PepUpStudios.TrafficFlow">Playable link of the previous prototype</a> (release with my contributions are coming soon)
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Worked on the second release prototype for Traffic Flow, as well as related ad campaign. <a href="https://play.google.com/store/apps/details?id=com.PepUpStudios.TrafficFlow">Original Play Store download link, which no longer works</a>
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Worked on designing and implementing the first 10 levels, including roads, waypoints, props, buildings, deciding powerups available, car types that can spawn, etc.
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Implementation of special vehicle variants such as emergency vehicles (need to reach their destination within a certain amount of time), criminals (ignore signals if given the chance), cash trucks (drop powerups which users can pickup), trash trucks (drop garbage which can cause accidents), impatient drivers (who will jump signals if they are forced to wait for too long), slower moving vehicles (will slow down the entire lane behind it) 
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Implementation of dropped powerups (from cash truck) to reset happiness, reset health bar of emergency vehicles, and add cash
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull; Expanded existing systems to allow for branching waypoints for cars, including selection criteria for deciding which way to go, audio and visual cues to convey driver emotions and special vehicle variants, and signals that automatically switch every x seconds if not toggled.
-	<br><br>Images will be added for both projects upon release
 	</text>
-	<br><br><hr size="2px" noshade>	
+	<img id="trafficflow-img" src="images/trafficflow-1.jpg" class="center"><br>
+	<i><center><text id="trafficflow-caption">caption goes here</text></i></center><br>
+	<div style="text-align: center;"><button onclick='Prevtrafficflow()'>Prev</button>
+	<button onclick='Nexttrafficflow()'>Next</button></div><br><br><hr size="2px" noshade>
 
-	<h1>Spacing Out (2019~)</h1>
-	<text>Description: Spacing Out is my current project, coming soon to the Play Store. It is still a work in progress, and a lot of the sprites and text are placeholders. The art style I'm aiming for is pencil drawn, with a slightly rough around the edges feel, almost as if it came out of someone's imagination. The concept is that it is a 2D physics based game with puzzle elements created in Unity (C#) where you play as a group of astronauts stranded in space due to an accident. The only way to move in space is by throwing something in the opposite direction, and that forms the core of gameplay. The objective is to get to the 'safe zone' where you can be rescued by your colleagues.</text><br><br>
+	<h1>Spacing Out (2019-2020)</h1>
+	<text>Description: Spacing Out is a physics based puzzle game set in the vacuum of space. A lot of the sprites and text from the build below are placeholders. The art style I'm aiming for is pencil drawn, with a slightly rough around the edges feel, almost as if it came out of someone's imagination. The concept is that it is a 2D physics based game with puzzle elements created in Unity (C#) where you play as a group of astronauts stranded in space due to an accident. The only way to move in space is by throwing something in the opposite direction, and that forms the core of gameplay. The objective is to get to the 'safe zone' where you can be rescued by your colleagues.</text><br><br>
 	<text>My Role: 
 		<br>&bull; Solo programmer and artist
-		<br>&bull; Created, and will be creating, all assets, scripts and prefabs for this game
+		<br>&bull; Created all assets, scripts and prefabs for this game
 		<br>&bull; Creation of an introductory cutscene using animations and scripts
 		<br>&bull; Scripting various objects and their behaviours, such as:
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Balls: The basic throwable object. An astronaut can throw it to fly in the opposite direction
@@ -62,7 +78,7 @@
 	<button onclick='NextSO()'>Next</button></div></div><br><br><hr size="2px" noshade>
 
 	<h1>NeuroSys (2017-2018)</h1>
-	<text>Description: NeuroSys was the capstone project for university. The project can be broken down into a simulation (Unity C# for Samsung Gear VR) and an app. The simulation side of the project, showcased here, was developed by a team of two. The idea was that this simulation could potentially be used (in the presence of a licensed therapist) to aid in the treatment of Acrophobia (fear of heights) and Arachnophobia (fear of spiders). The project won third place in the UOWD Innovation Fair.</text><br><br>
+	<text>Description: NeuroSys was the capstone project for my degree at UOWD. The project can be broken down into a simulation (Unity C# for Samsung Gear VR) and an app. The simulation side of the project, showcased here, was developed by a team of two. The idea was that this simulation could potentially be used (in the presence of a licensed therapist) to aid in the treatment of Acrophobia (fear of heights) and Arachnophobia (fear of spiders). The project won third place in the UOWD Innovation Fair.</text><br><br>
 	<text>My Role: <br>&bull; Co-lead developer for the simulation<br>&bull; 3D modelled most objects in the Acrophobia scenes using Autodesk Maya including<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Staircase<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Door<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Table<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; Chair<br>&nbsp;&nbsp;&nbsp;&nbsp;&#9643; TV<br>&bull; Helped with level planning and design across the board, including setting parameters for how intense each level needs to be, variables that the therapist can control within each level, locations of objects and hazards in the levels, etc<br>&bull; Design implemention for the Acrophobia levels<br>&bull; All Acrophobia scripts including hot-air balloon and elevator controls<br>&bull; Terrain sculpting using Unity's terrain tools<br>&bull; UI implementation+controls</text><br><br>
 	<img id="neurosys-img" src="images/neurosys-1.png" class="center"><br>
 	<i><center><text id="neurosys-caption">caption goes here</text></i></center><br>
@@ -132,6 +148,57 @@
 	<button onclick='NextPBA()'>Next</button></div><br><br>
 
 	<script type="text/javascript">
+		//trafficflow
+		{
+			var trafficflowmax = 7
+			var trafficflowcurrent = 1
+			var trafficflowimg = document.getElementById("trafficflow-img");
+			trafficflowimg.onload = function() { SetCaptiontrafficflow(); }
+
+			SetCaptiontrafficflow()
+
+			function Prevtrafficflow()
+			{
+				if (trafficflowcurrent == 1)
+					trafficflowcurrent = trafficflowmax;
+				else
+					trafficflowcurrent -=1;
+
+				document.getElementById("trafficflow-img").src = "images/trafficflow-"+trafficflowcurrent+".jpg";
+			}
+
+			function Nexttrafficflow()
+			{
+				if (trafficflowcurrent == trafficflowmax)
+					trafficflowcurrent = 1;
+				else
+					trafficflowcurrent +=1;
+				
+				document.getElementById("trafficflow-img").src = "images/trafficflow-"+trafficflowcurrent+".jpg";
+			}
+
+			function SetCaptiontrafficflow()
+			{
+				switch(trafficflowcurrent)
+				{
+					case 0:
+						document.getElementById("trafficflow-caption").innerHTML = "Loading...";
+						break;				
+					case 1:
+					case 2:
+					case 3:
+					case 4:
+					case 5:
+					case 6:
+					case 7:
+						document.getElementById("trafficflow-caption").innerHTML = "Screenshots from Traffic Flow's Play Store page";
+						break;
+					default:
+						document.getElementById("trafficflow-caption").innerHTML = "404 caption not found";
+				}
+			}
+		}
+		
 		//WTWB
 		{
 			var wtwbmax = 36
