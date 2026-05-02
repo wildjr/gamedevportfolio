@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { AboutMeData } from "./types";
 
+
 const MetaTags: React.FC<{ info: AboutMeData }> = ({ info }) => {
     return (
         <Helmet>

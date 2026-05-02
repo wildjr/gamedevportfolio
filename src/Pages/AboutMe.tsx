@@ -55,7 +55,7 @@ const AboutMe: React.FC = () => {
       <AboutText>
        {PersonalInfo.description}
       </AboutText>
-      <CVButton href={`${PersonalInfo.cvUri}`} download>
+      <CVButton href={`${process.env.PUBLIC_URL}/Sol Elan CV.pdf`} download>
         Download My CV
       </CVButton>
     </Container>

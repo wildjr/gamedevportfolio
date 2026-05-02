@@ -31,5 +31,4 @@ const MainPage: React.FC = () => (
   </GamesContainer>
 );
 
-
 export default MainPage;

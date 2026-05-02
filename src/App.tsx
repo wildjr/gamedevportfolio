@@ -9,8 +9,8 @@ import { Column } from "./Styles/StyledComponents";
 import Footer from "./Components/Footer";
 
 const AppContainer = styled(Column)`
-  min-height: 90vh;
   padding: 60px;
+  min-height: 90vh;
   gap: 30px;
 
   @media (max-width: 768px) {
