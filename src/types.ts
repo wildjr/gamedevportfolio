@@ -1,6 +1,9 @@
 export enum LinkImageSource {
   Github = "/images/logos/github.png",
   ItchIo = "/images/logos/itch.io.png",
+  PlayStore = "/images/logos/playstore.png",
+  Android = "/images/logos/android.png",
+  Windows = "/images/logos/windows.png",
 }
 
 export enum Platform {
@@ -9,16 +12,19 @@ export enum Platform {
   Linux = "Linux",
   iOS = "iOS",
   Android = "Android",
+  Browser = "Browser",
 }
 
 export enum GameEngine {
   Unity = "Unity",
   Unreal = "Unreal",
+  DirectX = "DirectX",
 }
 
 export enum MediaType {
   Image = "image",
   YouTube = "youtube",
+  Video = "video",
 }
 
 export interface MediaItem {
@@ -43,6 +49,7 @@ export interface AboutMeData {
 export interface Game {
   name: string;
   description: string;
+  role: string[];
   genres: string[];
   source?: { name: string; url: string };
   links: { source: LinkImageSource; url: string }[];

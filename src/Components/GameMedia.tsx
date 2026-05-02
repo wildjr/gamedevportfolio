@@ -157,6 +157,7 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
     <GameMediaContainer>
       <LargeMediaWrapper $isFading={isFading}>
         <BigMedia source={media[currentIndex].source} type={media[currentIndex].type} />
+        <div><p>helloo</p></div>
       </LargeMediaWrapper>
 
       <ThumbnailContainer>

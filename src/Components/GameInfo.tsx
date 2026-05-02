@@ -31,6 +31,15 @@ const GameDescription = styled.p`
   }
 `;
 
+const GameRole = styled.ul`
+  margin: 0;
+  font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
 const InfoTable = styled(Column)`
   gap: 5px;
   margin: 20px 0;
@@ -60,10 +69,13 @@ const LinksContainer = styled(Row)`
 `;
 
 const GameInfo: React.FC<GameInfoProps> = ({ game }) => {
+  const role = game.role.map(r => <li>{r}</li>);
     return (
         <GameInfoContainer>
             <GameTitle>{game.name}</GameTitle>
             <GameDescription>{game.description}</GameDescription>
+            {role.length > 0 && <GameDescription>My Role:</GameDescription>}
+            <GameRole>{role}</GameRole>
 
             <InfoTable>
                 <InfoRow>
